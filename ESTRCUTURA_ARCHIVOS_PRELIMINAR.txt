@@ -61,3 +61,140 @@
 # =============================================================================
 # src/PolyglotTester.jl - MÓDULO PRINCIPAL
 # =============================================================================
+
+
+####################################################################################################################################################################
+
+polyglot-tester/
+├── .gitignore                          [9]
+├── Project.toml                        [1] ← EMPEZAR AQUÍ
+├── Manifest.toml                       [auto-generado]
+├── README.md                           [10]
+├── LICENSE                             [11]
+├── src/
+│   ├── PolyglotTester.jl              [2] ← SEGUNDO
+│   ├── core/
+│   │   ├── types.jl                   [3] ← TERCERO
+│   │   ├── config.jl                  [15]
+│   │   ├── runner.jl                  [7]
+│   │   └── language_detector.jl       [4]
+│   ├── analyzers/
+│   │   ├── generic_analyzer.jl        [5]
+│   │   ├── julia_analyzer.jl          [12]
+│   │   ├── python_analyzer.jl         [13]
+│   │   └── external_tools.jl          [14]
+│   ├── reporters/
+│   │   ├── console_reporter.jl        [6]
+│   │   ├── json_reporter.jl           [16]
+│   │   └── html_reporter.jl           [17]
+│   └── utils/
+│       ├── file_utils.jl              [18]
+│       └── process_utils.jl           [19]
+├── configs/
+│   ├── default.toml                   [20]
+│   └── julia.toml                     [21]
+├── test/
+│   ├── runtests.jl                    [8]
+│   └── fixtures/                      [22]
+└── examples/
+    └── basic_usage.jl                 [23]
+
+####################################################################################################################################################################
+
+polyglot-tester/                      
+├── Project.toml                       [1] ← EMPEZAR AQUÍ
+
+├── src/
+│   ├── PolyglotTester.jl              [2] ← SEGUNDO
+│   ├── core/
+│   │   ├── types.jl                   [3] ← TERCERO
+        └── language_detector.jl       [4]
+
+│   ├── analyzers/
+│   │   ├── generic_analyzer.jl        [5]
+
+│   ├── reporters/
+│   │   ├── console_reporter.jl        [6]
+
+│   ├── core/
+│   │   ├── runner.jl                  [7]
+
+├── test/
+│   ├── runtests.jl                    [8]
+
+├── .gitignore                         [9]
+├── README.md                          [10]
+├── LICENSE                            [11]
+
+│   ├── analyzers/
+│   │   ├── julia_analyzer.jl          [12]
+│   │   ├── python_analyzer.jl         [13]
+│   │   └── external_tools.jl          [14]
+
+│   ├── core/
+│   │   ├── config.jl                  [15]
+
+│   ├── reporters/
+│   │   ├── json_reporter.jl           [16]
+│   │   └── html_reporter.jl           [17]
+│   └── utils/
+│       ├── file_utils.jl              [18]
+│       └── process_utils.jl           [19]
+
+├── configs/
+│   ├── default.toml                   [20]
+│   └── julia.toml                     [21]
+├── test/
+│   └── fixtures/                      [22]
+└── examples/
+    └── basic_usage.jl                 [23]
+
+
+####################################################################################################################################################################
+
+
+polyglot-tester/
+├── Project.toml                       [1] ← EMPEZAR AQUÍ
+├── src/
+│   ├── PolyglotTester.jl              [2] ← SEGUNDO
+│   ├── core/
+│   │   ├── types.jl                   [3] ← TERCERO (incluye Severity enum)
+│   │   ├── severity_classifier.jl     [4] ← CUARTO (nuevo - clasificación automática)
+│   │   └── language_detector.jl       [5] ← QUINTO
+│   ├── analyzers/
+│   │   ├── generic_analyzer.jl        [6] ← SEXTO
+│   ├── reporters/
+│   │   ├── console_reporter.jl        [7] ← SÉPTIMO
+│   │   ├── severity_reporter.jl       [8] ← OCTAVO (nuevo - reportes de severidad)
+│   ├── core/
+│   │   ├── runner.jl                  [9] ← NOVENO
+│   │   ├── health_scorer.jl           [10] ← DÉCIMO (nuevo - health scoring)
+├── test/
+│   ├── runtests.jl                    [11] ← UNDÉCIMO
+├── .gitignore                         [12]
+├── README.md                          [13]
+├── LICENSE                            [14]
+│   ├── analyzers/
+│   │   ├── julia_analyzer.jl          [15]
+│   │   ├── python_analyzer.jl         [16]
+│   │   └── external_tools.jl          [17]
+│   ├── core/
+│   │   ├── config.jl                  [18]
+│   │   ├── metrics_engine.jl          [19] ← NUEVO (análisis científico)
+│   ├── reporters/
+│   │   ├── json_reporter.jl           [20]
+│   │   ├── html_reporter.jl           [21]
+│   │   ├── executive_reporter.jl      [22] ← NUEVO (reportes ejecutivos)
+│   └── utils/
+│       ├── file_utils.jl              [23]
+│       └── process_utils.jl           [24]
+├── configs/
+│   ├── default.toml                   [25]
+│   ├── julia.toml                     [26]
+│   └── severity_rules.toml            [27] ← NUEVO (reglas de severidad)
+├── test/
+│   ├── fixtures/                      [28]
+│   └── test_severity.jl               [29] ← NUEVO (tests severidad)
+└── examples/
+    ├── basic_usage.jl                 [30]
+    └── severity_demo.jl               [31] ← NUEVO (demo severidad)

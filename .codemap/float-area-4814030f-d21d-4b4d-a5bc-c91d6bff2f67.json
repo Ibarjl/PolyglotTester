@@ -1,0 +1,79 @@
+{
+    "type": "float-area",
+    "_widgets": [
+        [
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "src\\PolyglotTester.jl",
+                            "floatAreaId": "4814030f-d21d-4b4d-a5bc-c91d6bff2f67"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": false,
+                                "selectionStart": {
+                                    "lineNumber": 1,
+                                    "column": 80
+                                },
+                                "position": {
+                                    "lineNumber": 1,
+                                    "column": 80
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 3,
+                            "firstPosition": {
+                                "lineNumber": 1,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": 0
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 227,
+                                "provider": "syntax",
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": false
+                        }
+                    }
+                },
+                "width": 694,
+                "height": 450,
+                "spacing": 0
+            }
+        ],
+        [
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "src\\reporters\\console_reporter.jl",
+                            "floatAreaId": "4814030f-d21d-4b4d-a5bc-c91d6bff2f67"
+                        }
+                    }
+                },
+                "width": 694,
+                "height": 450,
+                "spacing": 0
+            }
+        ]
+    ],
+    "_widths": [
+        694,
+        694
+    ],
+    "_modelData": {
+        "connections": [],
+        "annotations": [],
+        "highlights": []
+    }
+}
