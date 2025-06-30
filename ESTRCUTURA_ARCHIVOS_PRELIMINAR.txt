@@ -1,0 +1,63 @@
+# =============================================================================
+# ESTRUCTURA DE ARCHIVOS PARA FRAMEWORK POLÍGLOTA
+# =============================================================================
+
+# polyglot-tester/
+# ├── src/
+# │   ├── PolyglotTester.jl           # Módulo principal
+# │   ├── core/
+# │   │   ├── types.jl                # Tipos y estructuras
+# │   │   ├── config.jl               # Configuración
+# │   │   ├── runner.jl               # Ejecutor principal
+# │   │   └── language_detector.jl    # Detector de lenguajes
+# │   ├── analyzers/
+# │   │   ├── generic_analyzer.jl     # Análisis genérico
+# │   │   ├── julia_analyzer.jl       # Específico para Julia
+# │   │   ├── python_analyzer.jl      # Específico para Python
+# │   │   ├── javascript_analyzer.jl  # Específico para JavaScript
+# │   │   ├── cpp_analyzer.jl         # Específico para C++
+# │   │   └── external_tools.jl       # Interfaz con herramientas externas
+# │   ├── reporters/
+# │   │   ├── console_reporter.jl     # Salida consola
+# │   │   ├── json_reporter.jl        # Salida JSON
+# │   │   ├── html_reporter.jl        # Salida HTML
+# │   │   └── junit_reporter.jl       # Formato JUnit XML
+# │   └── utils/
+# │       ├── file_utils.jl           # Utilidades de archivos
+# │       ├── process_utils.jl        # Ejecución de procesos
+# │       └── pattern_utils.jl        # Patrones de código
+# ├── configs/
+# │   ├── julia.toml                  # Configuración Julia
+# │   ├── python.toml                 # Configuración Python
+# │   ├── javascript.toml             # Configuración JavaScript
+# │   └── default.toml                # Configuración por defecto
+# ├── templates/
+# │   ├── html_report.html            # Template HTML
+# │   └── config_template.toml        # Template configuración
+# ├── test/
+# │   ├── runtests.jl                 # Tests principales
+# │   ├── test_analyzers.jl           # Tests analizadores
+# │   ├── test_reporters.jl           # Tests reporters
+# │   └── fixtures/                   # Archivos de prueba
+# │       ├── valid_julia.jl
+# │       ├── invalid_python.py
+# │       └── test_javascript.js
+# ├── examples/
+# │   ├── basic_usage.jl              # Uso básico
+# │   ├── custom_config.jl            # Configuración personalizada
+# │   └── ci_integration.jl           # Integración CI/CD
+# ├── docs/
+# │   ├── src/
+# │   │   ├── index.md
+# │   │   ├── quickstart.md
+# │   │   ├── configuration.md
+# │   │   └── extending.md
+# │   └── make.jl
+# ├── Project.toml                    # Dependencias Julia
+# ├── Manifest.toml                   # Versiones exactas
+# ├── LICENSE
+# └── README.md
+
+# =============================================================================
+# src/PolyglotTester.jl - MÓDULO PRINCIPAL
+# =============================================================================
