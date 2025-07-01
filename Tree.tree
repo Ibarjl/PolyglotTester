@@ -1,0 +1,64 @@
+PolyglotTester
+ ┣ configs
+ ┃ ┣ default.toml
+ ┃ ┣ javascript.toml
+ ┃ ┣ julia.toml
+ ┃ ┣ python.toml
+ ┃ ┗ severity_rules.toml
+ ┣ docs
+ ┃ ┣ src
+ ┃ ┃ ┣ configuration.md
+ ┃ ┃ ┣ extending.md
+ ┃ ┃ ┣ index.md
+ ┃ ┃ ┗ quickstart.md
+ ┃ ┗ make.jl
+ ┣ examples
+ ┃ ┣ basic_usage.jl
+ ┃ ┗ severity_demo.jl
+ ┣ src
+ ┃ ┣ analyzers
+ ┃ ┃ ┣ cpp_analyzer.jl
+ ┃ ┃ ┣ external_tools.jl
+ ┃ ┃ ┣ generic_analyzer.jl
+ ┃ ┃ ┣ javascript_analyzer.jl
+ ┃ ┃ ┣ julia_analyzer.jl
+ ┃ ┃ ┗ python_analyzer.jl
+ ┃ ┣ core
+ ┃ ┃ ┣ config.jl
+ ┃ ┃ ┣ health_scorer.jl
+ ┃ ┃ ┣ language_detector.jl
+ ┃ ┃ ┣ metrics_engine.jl
+ ┃ ┃ ┣ runner.jl
+ ┃ ┃ ┣ severity_classifier.jl
+ ┃ ┃ ┗ types.jl
+ ┃ ┣ reporters
+ ┃ ┃ ┣ console_reporter.jl
+ ┃ ┃ ┣ executive_reporter.jl
+ ┃ ┃ ┣ html_reporter.jl
+ ┃ ┃ ┣ json_reporter.jl
+ ┃ ┃ ┣ junit_reporter.jl
+ ┃ ┃ ┗ severity_reporter.jl
+ ┃ ┣ utils
+ ┃ ┃ ┣ file_utils.jl
+ ┃ ┃ ┣ pattern_utils.jl
+ ┃ ┃ ┗ process_utils.jl
+ ┃ ┗ PolyglotTester.jl
+ ┣ templates
+ ┃ ┣ config_template.toml
+ ┃ ┗ html_report.html
+ ┣ test
+ ┃ ┣ fixtures
+ ┃ ┃ ┣ invalid_javascript.js
+ ┃ ┃ ┣ invalid_python.py
+ ┃ ┃ ┣ test_javascript.js
+ ┃ ┃ ┗ valid_julia.jl
+ ┃ ┣ runtests.jl
+ ┃ ┣ test_analyzers.jl
+ ┃ ┣ test_reporters.jl
+ ┃ ┗ test_severity.jl
+ ┣ .gitignore
+ ┣ ESTRCUTURA_ARCHIVOS_PRELIMINAR.txt
+ ┣ LICENSE
+ ┣ Manifest.toml
+ ┣ Project.toml
+ ┗ README.md
