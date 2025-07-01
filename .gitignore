@@ -1,0 +1,15 @@
+# Julia
+/Manifest.toml
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+deps/deps.jl
+docs/build/
+docs/site/
+
+# Temporales
+*.tmp
+.vscode/
+.DS_Store
+/build/
+/dist/
